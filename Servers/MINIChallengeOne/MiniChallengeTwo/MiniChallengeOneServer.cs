@@ -1,10 +1,13 @@
 
+using GutierrezFMiniChallengeTwoToFour_EndPoint.MiniChallengeOne;
+
 namespace GutierrezFMiniChallengeTwoToFour_EndPoint.Servers.MINIChallengeOne;
 
-    public class MiniChallengeOneServer : IMi
-    
+public class MiniChallengeOneServer : IMiniChallengeServer
+{
     public string AddNumbers(string value, string NumSec)
-        {
+    {
+{
         int Number; 
         int NumbSec;
         bool success = int.TryParse(value, out Number);
@@ -25,5 +28,7 @@ namespace GutierrezFMiniChallengeTwoToFour_EndPoint.Servers.MINIChallengeOne;
         }
             
         }return $"Not A Number {value}";
+        }    
         }
+}
     
